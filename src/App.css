@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  position: relative;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+header nav ul .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+}
+
+header nav ul .dropdown li {
+  padding: 10px 15px;
+}
+
+header nav ul .dropdown li a {
+  color: #333;
+}
+
+header nav ul li:hover .dropdown {
+  display: block;
+}
+
+header .auth-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header .auth-buttons input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+header .auth-buttons button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+header .auth-buttons button:last-child {
+  background: #ea4c89;
+}
+
+main .hero {
+  background: #f7f7f7;
+  padding: 100px 0;
+  text-align: center;
+}
+
+main .hero .hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main .hero h2 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+main .hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+main .hero button {
+  padding: 15px 30px;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main .creatives {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+main .creatives h3 {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main .creatives .shots {
+  display: flex;
+  gap: 15px;
+  animation: scroll 20s linear infinite;
+}
+
+main .creatives .shots .shot {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  min-width: 250px;
+}
+
+main .creatives .shots .shot img {
+  max-width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+main .creatives .shots .shot p {
+  font-size: 16px;
+  color: #333;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 10)); /* Adjust based on the number of images */
+  }
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+.container4 {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.titlee {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.card2 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+.card2 img {
+  width: 100%;
+  height: auto;
+}
+.card2 .info {
+  padding: 10px 0;
+}
+.card2 .info h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+.card2 .info p {
+  margin: 5px 0;
+  color: #666;
+}
+.card2 .stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.card2 .stats span {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.card2 .stats span svg {
+  margin-right: 5px;
+}
